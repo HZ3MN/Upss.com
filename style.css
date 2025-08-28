@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6f9fc;
+    color: #222;
+}
+header {
+    background: linear-gradient(90deg, #242582 60%, #2f2fa2 100%);
+    color: #fff;
+    padding: 30px 0 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(30,40,90,0.06);
+}
+header nav {
+    margin-top: 10px;
+}
+header nav a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+header nav a:hover {
+    color: #ffb400;
+}
+main {
+    max-width: 950px;
+    margin: 36px auto;
+    background: #fff;
+    padding: 30px 36px 40px 36px;
+    border-radius: 15px;
+    box-shadow: 0 2px 14px rgba(36,37,130,0.11);
+}
+#hero {
+    background: linear-gradient(90deg, #f8fafb 60%, #e0e7ff 100%);
+    padding: 22px 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 5px solid #553d67;
+}
+#hero h2 {
+    margin: 0 0 8px 0;
+    color: #553d67;
+}
+section {
+    margin-bottom: 48px;
+}
+h2 {
+    color: #242582;
+    margin-top: 0;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+input, select, textarea, button {
+    padding: 9px;
+    border-radius: 4px;
+    border: 1px solid #d5d5d5;
+    font-size: 1em;
+    margin-bottom: 12px;
+}
+input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #242582;
+}
+button {
+    background: linear-gradient(90deg, #242582 50%, #553d67 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+button:hover {
+    background: linear-gradient(90deg, #553d67 0%, #242582 100%);
+}
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-bottom: 20px;
+}
+.shop-item {
+    background: #f9f9fe;
+    border: 1px solid #e6e7f5;
+    border-radius: 8px;
+    padding: 16px;
+    width: 220px;
+    box-shadow: 0 2px 6px rgba(36,37,130,0.04);
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+.shop-item:hover {
+    box-shadow: 0 6px 20px rgba(36,37,130,0.09);
+}
+.shop-item h4 {
+    margin: 0 0 10px 0;
+}
+.shop-item img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+#cart-summary {
+    width: 99%;
+    background: #f0f4fa;
+    color: #222;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e2e6f5;
+}
+#checkout-form label {
+    font-weight: 500;
+}
+#checkout-form div {
+    margin-bottom: 10px;
+}
+#checkout-message {
+    margin-top: 12px;
+    font-weight: bold;
+}
+#shipping-details input,
+#shipping-details select {
+    margin-bottom: 7px;
+}
+.question-block {
+    background: #f8f8ff;
+    border: 1px solid #ececec;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+}
+#contact-form {
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+#contact-form label {
+    margin-top: 14px;
+}
+#contact-form input, #contact-form textarea {
+    width: 98%;
+}
+#contact-result {
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+    background: #242582;
+    color: #fff;
+    padding: 18px 0;
+    margin-top: 40px;
+    font-size: 0.97em;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Preparatory Secondary School (UPSS)</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Paystack and PayPal JS SDKs -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+</head>
+<body>
+    <header>
+        <h1>University Preparatory Secondary School (UPSS)</h1>
+        <nav>
+            <a href="#tests">Take a Test</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Welcome to UPSS Portal!</h2>
+            <p>
+                Explore a range of subjects, take interactive tests, and shop for school accessories.<br>
+                Securely pay with Mastercard, Bank Transfer, or PayPal. Choose your shipping method and location!
+            </p>
+        </section>
+        <section id="tests">
+            <h2>Take a Test</h2>
+            <button type="button" onclick="startTest()">THIS ARE EASY QUESTION HOPE YOU DON'T FAIL</button>
+            <form id="test-form">
+                <label for="subject">Choose Subject:</label>
+                <select id="subject" required>
+                    <option value="">Select</option>
+                </select>
+                <label for="topic">Choose Topic:</label>
+                <select id="topic" required>
+                    <option value="">Select</option>
+                </select>
+                <button type="button" onclick="startTest()">Start Test</button>
+            </form>
+            <div id="test-area" style="display:none;">
+                <form id="questions-form"></form>
+                <button id="submit-test" style="display:none;" onclick="submitTest()">Submit Answers</button>
+                <div id="test-result"></div>
+            </div>
+        </section>
+        <section id="shop">
+            <h2>School Accessories Shop</h2>
+            <div class="shop-items" id="shop-items"></div>
+            <h3>Checkout</h3>
+            <form id="checkout-form" onsubmit="event.preventDefault();">
+                <label for="cart-summary">Your Cart:</label>
+                <textarea id="cart-summary" readonly rows="5"></textarea>
+                <br>
+                <div>
+                    <strong>Shipping Method:</strong><br>
+                    <label><input type="radio" name="shipping-method" value="pickup" checked> Pick Up (Free)</label>
+                    <label><input type="radio" name="shipping-method" value="door"> Door Delivery (₦2000)</label>
+                </div>
+                <div id="shipping-details"></div>
+                <div>
+                    <strong>Select Payment Method:</strong><br>
+                    <label><input type="radio" name="payment-method" value="mastercard" checked> Mastercard (Paystack)</label>
+                    <label><input type="radio" name="payment-method" value="transfer"> Bank Transfer</label>
+                    <label><input type="radio" name="payment-method" value="paypal"> PayPal</label>
+                </div>
+                <div id="payment-section"></div>
+                <button type="button" onclick="checkout()">Pay</button>
+                <div id="checkout-message"></div>
+            </form>
+            <div id="paypal-button-container" style="margin-top:1em;display:none;"></div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form" onsubmit="event.preventDefault(); sendContact();">
+                <label for="contact-name">Your Name:</label>
+                <input type="text" id="contact-name" required>
+                <label for="contact-email">Your Email:</label>
+                <input type="email" id="contact-email" required>
+                <label for="contact-msg">Message:</label>
+                <textarea id="contact-msg" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+                <div id="contact-result"></div>
+            </form>
+            <div style="margin-top:1.5em;">
+                <p><strong>School Address:</strong> 1 Garrick lay out, Edo state, Benin city, Nigeria</p>
+                <p><strong>Phone:</strong> +234-902-399-3254</p>
+                <p><strong>Email:</strong> info@upsschool.edu.ng</p>
+            </div>
+        </section>
+    </main>
+    <h3><marquee behavior="" direction="left">Contact us from Monday-Friday pls</marquee></h3>
+    <h3><marquee behavior="" direction="right">Thank you for shopping at Upss your childs education is our concern</marquee></h3>
+    <footer>
+        &copy; 2025 University Preparator Secondary School. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
